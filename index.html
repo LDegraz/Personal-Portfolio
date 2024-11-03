@@ -19,9 +19,9 @@
 
         <nav>
             <ul class="flex-container">
-                <li class="flex-item"><a href="#">About Me</a></li>
-                <li class="flex-item"><a href="#">Portfolio</a></li>
-                <li class="flex-item"><a href="#">Contact</a></li>
+                <li class="flex-item"><a href="#about">About Me</a></li>
+                <li class="flex-item"><a href="#work">Portfolio</a></li>
+                <li class="flex-item"><a href="#contact">Contact</a></li>
                 <li class="flex-item"><a href="#">Resume</a></li>
             </ul>
         </nav>
@@ -38,10 +38,10 @@
 
         <div class="background-light-gradient">
 
-            <section class="flex-container">
+            <section class="flex-container-main">
 
                 <div class="section-label-div">
-                    <h2>About Me</h2>
+                    <h2 id="about">About Me</h2>
                 </div>
 
                 <p id="about-me-p">
@@ -51,64 +51,60 @@
 
             </section>
 
-            <section class="flex-container-work">
-    
+            <section class="flex-container-main">
+
                 <div class="section-label-div">
-                    <h2>Work</h2>
+                    <h2 id="work">Work</h2>
                 </div>
-    
-                <div id="background-image-2">
-                    <section class="work-section">
-                        <h4>Work Title 1</h4>
-                        <p>details</p>
+
+                <div id="section-content-div">
+                    <section id="background-image-2">
+                        <section class="work-section">
+                            <h4>Work Title 1</h4>
+                            <p>details</p>
+                        </section>
+                    </section>
+                    <section id="background-image-3">
+                        <section class="work-section">
+                            <h4>Work Title 2</h4>
+                            <p>details</p>
+                        </section>
+                    </section>
+                    <section id="background-image-4">
+                        <section class="work-section">
+                            <h4>Work Title 3</h4>
+                            <p>details</p>
+                        </section>
+                    </section>
+                    <section id="background-image-5">
+                        <section class="work-section">
+                            <h4>Work Title 4</h4>
+                            <p>details</p>
+                        </section>
+                    </section>
+                    <section id="background-image-6">
+                        <section class="work-section">
+                            <h4>Work Title 5</h4>
+                            <p>details</p>
+                        </section>
                     </section>
                 </div>
 
-                <div id="background-image-3">
-                    <section class="work-section">
-                        <h4>Work Title 2</h4>
-                        <p>details</p>
-                    </section>
-                </div>
-
-                <div id="background-image-4">
-                    <section class="work-section">
-                        <h4>Work Title 3</h4>
-                        <p>details</p>
-                    </section>
-                </div>
-
-                <div id="background-image-5">
-                    <section class="work-section">
-                        <h4>Work Title 4</h4>
-                        <p>details</p>
-                    </section>
-                </div>
-
-                <div id="background-image-6">
-                    <section class="work-section">
-                        <h4>Work Title 5</h4>
-                        <p>details</p>
-                    </section>
-                </div>
-    
             </section>
 
-            <section class="flex-container">
+            <section class="flex-container-main">
 
                 <div class="section-label-div">
-                    <h2>Contact Me</h2>
+                    <h2 id="contact">Contact Me</h2>
                 </div>
 
-                    <nav>
-                        <ul class="flex-container">
-                            <li class="flex-item" class="text-dark">555.555.5555</li>
-                            <li class="flex-item" class="text-dark"><a href="#">degrazia@email.com</a></li>
-                            <li class="flex-item" class="text-dark"><a href="#">LinkedIn</a></li>
-                            <li class="flex-item" class="text-dark"><a href="#">GitHub</a></li>
-                        </ul>
+                <div id="contact-div">
+                    <nav id="contact-nav">
+                        <div class="flex-item">555.555.5555</div>
+                        <div class="flex-item"><a href="#">degrazia@email.com</a></div>
+                        <div class="flex-item"><a href="#">LinkedIn</a></div>
+                        <div class="flex-item"><a href="#">GitHub</a></div>
                     </nav>
-
                 </div>
 
             </section>
@@ -117,12 +113,8 @@
 
     </main>
 
-    <footer class="background-dark">
-
-        <section>
-            <p id="footer-p">© 2024 Lauren DeGrazia 🤌🏼</p>
-        </section>
-
+    <footer>
+         <p id="footer-p">© 2024 Lauren DeGrazia 🤌🏼</p>
     </footer>
 
 </body>
