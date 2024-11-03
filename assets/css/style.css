@@ -36,6 +36,7 @@ a {
 /*header styling*/
 header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 20px 40px 20px 0px;
     align-items: center;
@@ -67,10 +68,6 @@ li {
 }
 
 #header-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: left;
     padding: 10px 10px 10px 5px;
     background-color: var(--background-green);
 }
@@ -128,42 +125,51 @@ p {
     border-right: 4px solid var(--text-dark);
     width: 75px;
     height: 100px;
-    justify-content: flex-end;
 }
 
 #about-me-p {
     font-size: 100%;
-    justify-content: center;
     align-items: center;
-    display: flex;
     color: var(--text-dark);
 }
 
 #section-content-div {
     font-size: 100%;
-    justify-content: center;
     align-items: center;
-    display: flex;
     color: var(--text-dark);
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 5px;
 }
 
 .work-section {
     background-color: var(--background-green);
     padding: 5px 5px 5px 5px;
     display: block;
-    box-sizing: content-box;
-    width: fit-content;
-    height: fit-content;
+    width: 75px;
+    height: 75px;
+    border: #141e46;
+    border-style: solid;
+    border-width: 1px;
 }
 
 #background-image-2 {
-    height: 300px;
+    height: 400px;
     width: 100%;
     background-image: url('../images/background2.png');
     background-size: cover;
     display: flex;
-    align-items: center;
-    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+    width: 100%;
+    border: #141e46;
+    border-style: dotted;
+    border-width: 10px;
 }
 
 #background-image-3 {
@@ -172,7 +178,13 @@ p {
     background-image: url('../images/background3.jpeg');
     background-size: cover;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    width: 49%;
+    border: #141e46;
+    border-style: dotted;
+    border-width: 10px;
 }
 
 #background-image-4 {
@@ -182,7 +194,13 @@ p {
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    width: 49%;
+    border: #141e46;
+    border-style: dotted;
+    border-width: 10px;
 }
 
 #background-image-5 {
@@ -192,7 +210,13 @@ p {
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    width: 49%;
+    border: #141e46;
+    border-style: dotted;
+    border-width: 10px;
 }
 
 #background-image-6 {
@@ -202,7 +226,13 @@ p {
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    width: 49%;
+    border: #141e46;
+    border-style: dotted;
+    border-width: 10px;
 }
 
 #contact-div {
@@ -230,18 +260,38 @@ footer {
     color: var(--text-green);
 }
 
-
-/*responsive styling*/
-#background-image-2::before {
-    content: '';
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-#background-image-2:hover::after {
-    opacity: 3;
-  }
-
 /*media queries*/
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
 
+    .flex-container-main {
+        flex-direction: column;
+    }
 
+    header {
+        flex-direction: column;
+    }
+
+    #background-image-2 {
+        height: 300px;
+        flex-shrink: 2;
+      }
+    
+    #background-image-3 {
+        width: 100%;
+      }
+
+    #background-image-4 {
+        width: 100%;
+      }
+    
+    #background-image-5 {
+        width: 100%;
+      }
+
+    #background-image-6 {
+        width: 100%;
+      }
+}
