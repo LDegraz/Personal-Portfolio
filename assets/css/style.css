@@ -138,10 +138,58 @@ p {
     color: var(--text-dark);
 }
 
-.work-section {
-    background-color: var(--background-green);
+.flex-container-work {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
 }
 
+.work-section {
+    background-color: var(--background-green);
+    padding: 5px 5px 5px 5px;
+    display: block;
+}
+
+#background-image-2 {
+    height: 100px;
+    background-image: url('./assets/images/background2.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#background-image-3 {
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#background-image-4 {
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#background-image-5 {
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#background-image-6 {
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+}
 
 /*footer styling*/
 footer {
